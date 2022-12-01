@@ -1,0 +1,9 @@
+create database adv_sadiq_database;
+
+use adv_sadiq_database;
+
+create table admin(name varchar(20),password varchar(20));
+
+insert into admin values('sadiq','pass@word');
+
+create table client_table(s_no integer not null auto_increment,application_no integer,date_of_application date,trademark varchar(100),class integer,name_of_prop_partner_director varchar(150),trading_as varchar(150),address varchar(250),mobile_no varchar(10),govt_fees integer,advocate_fees integer,payment_mode varchar(100),cheque_no varchar(50),bank_name varchar(100),net_status varchar(30),remarks varchar(250),primary key(s_no,application_no));

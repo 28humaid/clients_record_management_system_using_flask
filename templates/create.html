@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create database</title>
+    <link rel="stylesheet" href="static/css/cssPage.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="href" style="background-color: green;">
+            <a href="/home">Home</a>
+        </div>
+        <div class="href">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    <div class="form-container">
+        <form method="POST" action="/insertRecordToDB">
+            Application no.<br><div style="height:10px"></div><input type="number" id="text" name="appNo" placeholder="Enter application no." required><br><div style="height:25px"></div>
+            Date of application<br><div style="height:10px"></div><input type="date" id="text" name="date" placeholder="Enter date of application"><br><div style="height:25px"></div>
+            Trademark<br><div style="height:10px"></div><input type="text" id="text" name="trademark" placeholder="Enter trademark"><br><div style="height:25px"></div>
+            Class<br><div style="height:10px"></div><input type="number" id="text" name="class" placeholder="Enter class"><br><div style="height:25px"></div>
+            Name of prop/partner/director<br><div style="height:10px"></div><input type="text" id="text" name="name" placeholder="Enter name of prop/partner/director" required><br><div style="height:25px"></div>
+            Trading as<br><div style="height:10px"></div><input type="text" id="text" name="tradingAs" placeholder="Enter company name"><br><div style="height:25px"></div>
+            Address<br><div style="height:10px"></div><input type="text" id="text" name="address" placeholder="Enter address"><br><div style="height:25px"></div>
+            Mobile no.<br><div style="height:10px"></div><input type="text" id="text" name="mobile" placeholder="Enter mobile no."><br><div style="height:25px"></div>
+            Government fees <br><div style="height:10px"></div><input type="number" id="text" name="govtFees" placeholder="Enter government fees"><br><div style="height:25px"></div>
+            Advocate fees<br><div style="height:10px"></div><input type="number" id="text" name="advocateFees" placeholder="Enter advocate fees"><br><div style="height:25px"></div>
+            Payment mode<br><div style="height:10px"></div><input type="text" id="text" name="paymentMode" placeholder="Enter payment mode"><br><div style="height:25px"></div>
+            Enter cheque no.<br><div style="height:10px"></div><input type="text" id="text" name="chequeNumber" placeholder="Enter cheque no."><br><div style="height:25px"></div>
+            Enter bank name<br><div style="height:10px"></div><input type="text" id="text" name="bankName" placeholder="Enter bank name"><br><div style="height:25px"></div>
+            Status <br><div style="height:10px"></div><input type="text" id="text" name="status" placeholder="Enter status"><br><div style="height:25px"></div>
+            Remarks<br><div style="height:10px"></div><input type="text" id="text" name="remarks" placeholder="Enter remarks"><br><div style="height:25px"></div>
+            <button type="submit">Submit</button>
+            <div style="height:25px"></div>
+        </form>
+    </div>
+    <div class="bottom-banner">
+        created by Humaid Alam Ansari
+    </div>
+</body>
+</html>

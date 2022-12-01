@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read_all</title>
+    <link rel="stylesheet" href="static/css/cssPage.css">
+    <style>
+        table{
+            margin: 5px;
+            font-size: 20px;
+            width:100%;
+            background-color:black;
+            border-style: solid;
+        }
+        tr,td,th{
+            border-style: solid;
+            background-color:white;
+            padding:5px;
+            border-width: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="href" style="background-color: rgb(41, 41, 188);">
+            <a href="/read">Back</a>
+        </div>
+        <div class="href" style="background-color: green;">
+            <a href="/home">Home</a>
+        </div>
+        <div class="href">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>S.No.</th>
+                <th>Application no.</th>
+                <th>Date of application</th>
+                <th>Trademark</th>
+                <th>Class</th>
+                <th>Name of prop/partner/director</th>
+                <th>Trading as</th>
+                <th>Address</th>
+                <th>Mobile no.</th>
+                <th>Government fees</th>
+                <th>Advocate fees</th>
+                <th>Payment mode</th>
+                <th>Cheque no.</th>
+                <th style="width:550px;padding:10px">Bank name</th>
+                <th>Net Status</th>
+                <th>Remark</th>
+            </tr>
+            {%for detail in readAllVar%}
+            <tr>
+                <td>{{detail[0]}}</td>
+                <td>{{detail[1]}}</td>
+                <td>{{detail[2]}}</td>
+                <td>{{detail[3]}}</td>
+                <td>{{detail[4]}}</td>
+                <td>{{detail[5]}}</td>
+                <td>{{detail[6]}}</td>
+                <td>{{detail[7]}}</td>
+                <td>{{detail[8]}}</td>
+                <td>{{detail[9]}}</td>
+                <td>{{detail[10]}}</td>
+                <td>{{detail[11]}}</td>
+                <td>{{detail[12]}}</td>
+                <td>{{detail[13]}}</td>
+                <td>{{detail[14]}}</td>
+                <td>{{detail[15]}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+    <div class="bottom-banner">
+        created by Humaid Alam Ansari
+    </div>
+</body>
+</html>

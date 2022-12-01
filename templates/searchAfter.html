@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update page</title>
+    <link rel="stylesheet" href="static/css/cssPage.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="href" style="background-color: green;">
+            <a href="/home">Home</a>
+        </div>
+        <div class="href">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    {% for detail in extractedUser %}
+        <div class="form-container">
+            <form method="POST" action="/finalUpdateAfterSearch">
+            Application no.<br><div style="height:10px"></div><input type="number" id="text" name="appNo" value="{{detail[1]}}" required><br><div style="height:25px"></div>
+            Date of application<br><div style="height:10px"></div><input type="date" id="text" name="date" value="{{detail[2]}}"><br><div style="height:25px"></div>
+            Trademark<br><div style="height:10px"></div><input type="text" id="text" name="trademark" value="{{detail[3]}}"><br><div style="height:25px"></div>
+            Class<br><div style="height:10px"></div><input type="number" id="text" name="class" value="{{detail[4]}}"><br><div style="height:25px"></div>
+            Name of prop/partner/director<br><div style="height:10px"></div><input type="text" id="text" name="name" value="{{detail[5]}}" required><br><div style="height:25px"></div>
+            Trading as<br><div style="height:10px"></div><input type="text" id="text" name="tradingAs" value="{{detail[6]}}"><br><div style="height:25px"></div>
+            Address<br><div style="height:10px"></div><input type="text" id="text" name="address" value="{{detail[7]}}"><br><div style="height:25px"></div>
+            Mobile no.<br><div style="height:10px"></div><input type="text" id="text" name="mobile" value="{{detail[8]}}"><br><div style="height:25px"></div>
+            Government fees <br><div style="height:10px"></div><input type="number" id="text" name="govtFees" value="{{detail[9]}}"><br><div style="height:25px"></div>
+            Advocate fees<br><div style="height:10px"></div><input type="number" id="text" name="advocateFees" value="{{detail[10]}}"><br><div style="height:25px"></div>
+            Payment mode<br><div style="height:10px"></div><input type="text" id="text" name="paymentMode" value="{{detail[11]}}"><br><div style="height:25px"></div>
+            Enter cheque no.<br><div style="height:10px"></div><input type="text" id="text" name="chequeNumber" value="{{detail[12]}}"><br><div style="height:25px"></div>
+            Enter bank name<br><div style="height:10px"></div><input type="text" id="text" name="bankName" value="{{detail[13]}}"><br><div style="height:25px"></div>
+            Status <br><div style="height:10px"></div><input type="text" id="text" name="status" value="{{detail[14]}}"><br><div style="height:25px"></div>
+            Remarks<br><div style="height:10px"></div><input type="text" id="text" name="remarks" value="{{detail[15]}}"><br><div style="height:25px"></div>
+            <button type="submit">Submit</button>
+            <div style="height:25px"></div>
+            </form>
+        </div>
+    {% endfor %}
+    <div class="bottom-banner">
+        created by Humaid Alam Ansari
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read data</title>
+    <link rel="stylesheet" href="static/css/cssPage.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="href" style="background-color: green;">
+            <a href="/home">Home</a>
+        </div>
+        <div class="href">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    <div class="form-container" style="display: flex;flex-direction:column">
+        <form action="/recordOfClientUsingAppNo" method="POST">
+            <button type="submit">Record of particular client (using application no.)</button>
+            <div style="height:10px"></div>
+            <input type="text" name="client_id" id="" placeholder="Enter the ID of desired client" required>
+        </form>
+        <div style="margin:40px; font-size:20px; ">--------------------------Select the option above or below this line---------------------------</div>
+        <form action="/recordOfClientUsingName" method="POST">
+            <button type="submit">Record of particular client (using name)</button>
+            <div style="height:10px"></div>
+            <input type="text" name="client_name" id="" placeholder="Enter the name of desired client" required>
+        </form>
+        <div style="margin:40px; font-size:20px; ">--------------------------Select the option above or below this line---------------------------</div>
+        <form action="/readAll">
+            <button type="submit">All records</button>
+        </form>
+    </div>
+    <div class="bottom-banner">
+        created by Humaid Alam Ansari
+    </div>
+</body>
+</html>
