@@ -1,2 +1,0 @@
-SQL_commands
-column_names
