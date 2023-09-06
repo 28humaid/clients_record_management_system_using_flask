@@ -1,0 +1,2 @@
+# clients record management system using flask
+The theme of this project appears to be a web-based application for managing client records. It includes features for user authentication, creating and inserting client records into a database, reading and searching for client records, updating client records, and deleting client records. The project also incorporates sessions for user login and uses the Flask framework to build the web application. The primary focus is on managing and manipulating client data within a database.
